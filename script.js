@@ -71,3 +71,32 @@ console.log(Array.isArray(arrayType));
 const arrayJoin = ["COROLA", "MARCITIS", "BMW", "VOLVO"];
 console.log(arrayJoin.join(" ~ "));
 
+// Array Splice
+const arraySplice = ["COROLA", "MARCITIS", "BMW", "VOLVO"];
+const kop = arraySplice.splice(1, 2);
+console.log(kop);
+
+
+// Array slice
+const arraySlice = ["COROLA", "MARCITIS", "BMW", "VOLVO"];
+const show = arraySlice.slice(1, 3);
+console.log(show);
+
+// Array string sort
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();
+console.log(fruits);
+
+// Array Number sort 
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function (a, b) {
+    return a - b;
+});
+console.log(points);
+
+// Array function 
+const sum = (a, b) => {
+    const sum = a % b;
+    return sum;
+};
+console.log(sum(12, 9))
